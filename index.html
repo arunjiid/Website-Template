@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name=keywords content="">
+<meta name="author" content="">
+<link rel="icon" href="css/favicon.ico">
+<title>PROMACT</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/global.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#"> <img src="images/logo.png" height="26" width="200"> </a> </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Get In Touch </a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</nav>
+<div class="banner_container">
+  <div class="container">
+    <div class="headingcenter	animated fadeIn Bannertext">
+      <h1> Do not wait - <span> launch </span> your startup now! </h1>
+      <p> Promact: Startup IT Services Specialist </p>
+      <p> we have a unique expertise in dealign with startups and managing stacks.</p>
+      <div class="scrollbtns animated fadeInDown"  > <a class="fa fa-chevron-down fa-3x" title="" target="_blank" href="#scrolldown"></a> </div>
+    </div>
+  </div>
+</div>
+<div class="gettuch_bg" id="scrolldown">
+  <div class="container">
+    <div class="row">
+      <div class="gettuch_text animated fadeInLeft animatetime">
+        <h2> Get in Touch </h2>
+        <p> Please let us know what you are looking for and we will contact you at the eariest. </p>
+        <p class="line"> </p>
+      </div>
+      <div class="col-sm-7">
+        <div class="contact_form">
+          <form name="myForm" action="#"
+onsubmit="return validateForm()" method="post">
+            <div class="form-group">
+              <input type="text" class="form-control" name="fullname" id="FullName" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="Email" id="txtEmail" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" id="message" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" value="submit" class="btn btn-default btn-lg btnactive"  onclick='Javascript:checkEmail();'/>
+            Submit
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9309487478326!2d73.18815216453012!3d22.280605385333832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc5e9df5d1845%3A0xa12efe875e297e6f!2sPromact+Infotech+Pvt+Ltd!5e0!3m2!1sen!2sin!4v1535889269878" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="socialbg_footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 animated fadeInLeft" >
+        <h2> About </h2>
+        <p class="text-justify"> Get In Touch
+          Please let us know what you are looking for and we will contact you at the eariest. Get In Touch
+          Please let us know what you are looking for and we will contact you at the eariest.Get In Touch
+          Please let us know what you are looking for and we will contact you at the eariest.</p>
+      </div>
+      <div class="col-sm-4">
+        <h2> Social </h2>
+        <div class="social"> <a class="fa fa-facebook" title="" target="_blank" href="#"></a> <a class="fa fa-twitter" title="" target="_blank" href="#"></a> <a class="fa fa-google-plus" title="" target="_blank" href="#"></a> <a class="fa fa-linkedin" title="" target="_blank" href="#"></a> </div>
+      </div>
+      <div class="col-sm-4">
+        <h2> Contact </h2>
+        <p class="text-left"> B-301, Monalisa Business Center, Near More Mega Store, Manjalpur,<br/>
+          Vadodara, Gujarat, India - 390011 </p>
+        <p class="emailactive"> <a href="mailto:info@promactinfo.com"> info@promactinfo.com </a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="copyright"> Copyright ©2016 Promact Infotech Pvt. Ltd. All Rights Reserved. </div>
+<script type="text/javascript" src="js/jquery.min.js">  </script> 
+<script type="text/javascript" src="js/bootstrap.min.js">  </script> 
+<script> 
+
+function validateForm() {
+    var x = document.forms["myForm"]["fullname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+
+}
+
+
+function validateForm() {
+    var y = document.forms["myForm"]["message"].value;
+    if (y == "") {
+        alert("Message must be filled out");
+        return false;
+    }
+
+}
+
+function checkEmail() {
+
+    var email = document.getElementById('txtEmail');
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!filter.test(email.value)) {
+    alert('Please provide a valid email address');
+    email.focus;
+    return false;
+ }
+}
+
+
+</script>
+</body>
+</html>
